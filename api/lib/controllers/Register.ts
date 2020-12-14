@@ -50,9 +50,23 @@ router.post("/signup", async (
     res.json(success(user,{ token }))
   })(req, res, next)
 });
+
+router.post("/forgot-password", async(
+  req:Request,
+  res:Response,
+  next
+) =>{
+  const user = await getRepository(Users).findOne({ where: { username : req.body.username } });
+  if (user) {
+    getRepository(Users).merge(user, req.body.password);
+    const results = await getRepository(Users).save(user);
+    res.json(results);
+  }
+  res.json({msg: 'Not user found'});
+
+});
+
 export default router
-
-
 /* STRUCTURE RESPONSE :
 
 { data:
