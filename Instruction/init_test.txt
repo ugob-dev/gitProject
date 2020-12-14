@@ -1,0 +1,37 @@
+
+//creeer user
+
+http://localhost:3000/user/
+{
+    "firstName": "test",
+    "lastName": "test",
+    "age": 1
+}
+
+http://localhost:3000/user/
+
+//cree bucket
+
+http://localhost:3000/user/1/bucket
+{
+    "name": "test",
+    "path": "test",
+    "size": 1,
+    "User":{
+        "firstName": "test",
+        "lastName": "test",
+        "age": 1
+    }
+
+}
+
+//cree blob
+
+http://localhost:3000/user/1/buckets/1/blobs
+{
+    "name": "test",
+    "path": "test",
+    "size": 1,
+    "publicLink": "test",
+    "Bucketid": 1
+}

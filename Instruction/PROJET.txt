@@ -1,0 +1,70 @@
+PROJET:
+
+interface pour upload download des fichier
+
+cross platform
+systeme de user (co)
+
+jwt ( ? ) json web token
+
+sending email ( package )
+
+reset passwor via email
+
+bucket (repertoire)
+blob (fichier)
+
+  ~/myS3data/$USER_UUID/$BUCKET_NAME/$BLOB_NAME
+
+Route : create , edit , delete
+
+	POST 	/user
+	Get 	/user/:uuid
+	PUT 	/user/:uuid
+	DELETE	/user/:uuid
+
+	POST 	/sign-up
+	POST 	/sign-in
+	POST	/forgot-password
+
+	POST	/user/:user_uuid/buckets
+	CREATE	/buckets/:id
+	DELETE	/buckets/:id
+
+	POST	/user/:user_uuid/buckets/:bucket_id/blobs
+	POST	/blobs/:id/copy   (renommer avec 1234 ) recuperer le num
+	CREATE	/blobs/:id
+	DELETE	/blobs/:id
+	GET	/blobs/:id
+
+ajouter : pu-erh pour le repo
+
+uuid ( voir uuidv4 )
+
+stocker l'api : amazon S3
+
+download ( get ) 
+
+blob dans la db : id, name, path, size,  bucket
+
+ssr ( ? ) server-side-rendering  : route qui charge ma vue  (site web)
+
+	Get 	/app
+
+lien de partage (comme github) (lien public)
+
+
+CONTRAINTE
+
+hook/Context with react , observables with angular or mxins with
+
+
+PLANNING
+
+finir api et l'upload :  10/12/2020
+
+
+ENTRAINEMENT :
+
+ Typescript : https://build-rho-ten.vercel.app/
+

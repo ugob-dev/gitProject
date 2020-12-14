@@ -1,0 +1,8 @@
+DELIMITER | -- Facultatif si votre délimiteur est toujours |
+CREATE PROCEDURE changePath (IN paramsid INT)  
+BEGIN
+    SELECT paramsid 
+    FROM Race
+    WHERE espece_id = p_espece_id;  -- Utilisation du paramètre
+END |
+DELIMITER ;  -- On remet le délimiteur par défaut

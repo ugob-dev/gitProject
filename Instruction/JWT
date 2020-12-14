@@ -1,0 +1,5 @@
+// strategi dans passport.ts
+
+//route untilisant strategi 'local'
+
+// route utilisant checkJWT

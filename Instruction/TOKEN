@@ -1,0 +1,6 @@
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDc2NzI4ODN9.tVTRazrlfjzyFNECwJH0F-rL5YBMIvQpdaMGABPXPOc
+{
+        "username": "test",
+        "password": "test"
+}
+localhost:3000/auth/signin
